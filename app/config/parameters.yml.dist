@@ -1,0 +1,51 @@
+# This file is a "template" of what your parameters.yml file should look like
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     127.0.0.1
+    database_port:     ~
+    database_name:     project
+    database_user:     project
+    database_password: SomeLongSecureStringWithDigits123
+    # You should uncomment this if you want use pdo_sqlite
+    # database_path: "%kernel.root_dir%/data.db3"
+
+    locale:            ru
+
+    # A secret key that's used to generate certain security-related tokens
+    secret:            SomeLongSecureStringWithDigits123
+
+    debug_toolbar:          true
+    debug_redirects:        false
+    use_assetic_controller: true
+
+    images_cache_prefix: img_cache
+
+    cherez_web__project__url__protocol: "http"
+    cherez_web__project__url__host: "project.somesite.ru"
+    cherez_web__project__logo_path: "bundles/cherezwebdefault/chw_logo.png"
+    cherez_web__project__company__name: "ЧерезВеб"
+    cherez_web__project__company__start_year: "2011"
+    cherez_web__project__company__url__protocol: "http"
+    cherez_web__project__company__url__host: "www.somesite.ru"
+    cherez_web__project__name: "Проект ЧерезВеб"
+    cherez_web__project__title: "Проект ЧерезВеб - лучший проект"
+    cherez_web__project__counter__google_analytics: "GoogleCounterNumber"
+
+    cherez_web__project__email__noreply__mail: "noreply@somesite.ru"
+
+    # Required for dev mode:
+    cherez_web__project__email__noreply__username: "noreply@somesite.ru"
+    cherez_web__project__email__noreply__password: "SomeLongSecureStringWithDigits123"
+    cherez_web__project__email__noreply__host: "ssl://smtp.yandex.ru:465"
+
+    cherez_web__project__email__dev__delivery_address: "admin@mail.com"
+
+    cherez_web__project__email__support: "support@somesite.ru"
+
+    cherez_web__billing__secret: "SomeLongSecureStringWithDigits123"
+    cherez_web__billing__robokassa__merchan_login: ~
+    cherez_web__billing__robokassa__merchan_pass_1: ~
+    cherez_web__billing__robokassa__merchan_pass_2: ~
+
+    cherez_web__service__redirect__index_route: "cherez_web_project_index"
+    cherez_web__service__redirect__cp_index_route: "cherez_web_service_cp_billing_index"

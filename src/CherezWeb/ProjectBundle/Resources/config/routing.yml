@@ -1,0 +1,4 @@
+cherez_web_project_index:
+    pattern:  /
+    defaults: { _controller: CherezWebProjectBundle:Default:index }
+    options: { expose: true }

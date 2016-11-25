@@ -1,0 +1,8 @@
+{% extends 'CherezWebProjectBundle::layout.html.twig' %}
+{% set headTitle = 'Панель управления' %}
+{% block headline %}Панель управления{% endblock headline %}
+{% block content_sidebar %}
+    <div class="list-group">
+        {% block sidebar_items %}{% endblock sidebar_items %}
+    </div>
+{% endblock content_sidebar %}
